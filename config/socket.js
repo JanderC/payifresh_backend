@@ -7,7 +7,7 @@ const { verifyToken } = require('./jwt');
 const setupSocket = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: process.env.FRONTEND_URL || 'https://payifresh.vercel.app',
+      origin: process.env.FRONTEND_URL || 'https://payifresh.vercel.app/login',
       methods: ['GET', 'POST'],
       credentials: true
     },
